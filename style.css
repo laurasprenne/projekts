@@ -1,41 +1,111 @@
+h1{
+    text-align: center;
+}
+h3{
+    color: #555;
+}
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.nav{
-    display: flex;
-    justify-content: space-around
-}
-.name{
-    text-align: center;
-}
-.header{
+.colorchoice{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-self: center;
+    text-align: center;
 }
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-  }
-  
-  a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .previous {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  
-  .next {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  
-  .round {
+.namechoice{
+    text-align: center;
+}
+.colorchoices{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around center;
+    row-gap: 10px;
+    column-gap: 10px;
+    text-align: center;
+}
+#circle{
+    height: 200px;
+    width: 200px;
+    background-color: #555;
     border-radius: 50%;
-  }
+}
+.pet{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    column-gap: 20px;
+}
+#labels
+{
+	margin-left: 10px;
+	padding: 2px 0 2px 5px;
+	width: 80px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#meters
+{
+	padding: 3px 0 4px 0;
+	width: 130px;
+}
+
+/*
+The meters each have a border color matching their background color, to be manipulated via script as indicators.
+*/
+
+#mHealth
+{
+	background-color: #81F781; /* green */
+	border: 1px solid #81F781;
+}
+
+#mHappiness
+{
+	background-color: #FAAC58; /* orange */
+	border: 1px solid #FAAC58;
+}
+
+#mFood
+{
+	background-color: #5882FA; /* blue */
+	border: 1px solid #5882FA;
+}
+
+#buttons
+{
+	padding: 18px 4px 0 0;
+	height: 40px;
+	width: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.feedBtn
+{
+	background-color: #04B4AE; /* turquoise */
+  color: #F2F2F2; /* near white */
+  padding: 2px;
+  margin: 1px;
+}
+
+.feedBtn:hover
+{
+  background-color: #01DFD7;
+}
+
+.feedBtn:active
+{
+  background-color: #088A85;
+}
+
+#feedback
+{
+	margin-top: 67px;
+	padding: 3px 0 4px 0;
+	width: 380px;
+	float: none;
+}

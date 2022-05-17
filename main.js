@@ -1,5 +1,23 @@
-function switchColor() {
-        document.getElementById("circle").style.backgroundColor = "blue";
+function switchColor(code) {
+        if (0){
+            document.getElementById("circle").style.backgroundColor = "blue";
+        }
+        if (1){
+            document.getElementById("circle").style.backgroundColor = "yellow";
+        }
+        if (2){
+            document.getElementById("circle").style.backgroundColor = "red";
+        }
+        if (3){
+            document.getElementById("circle").style.backgroundColor = "purple";
+        }
+        if (4){
+            document.getElementById("circle").style.backgroundColor = "orange";
+        }
+        if (5){
+            document.getElementById("circle").style.backgroundColor = "pink";
+        }
+
 }
 
 

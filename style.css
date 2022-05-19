@@ -38,74 +38,54 @@ body{
     padding-top: 30px;
     column-gap: 20px;
 }
-#labels
-{
+
+.labels{
 	margin-left: 10px;
-	padding: 2px 0 2px 5px;
-	width: 80px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+    margin-right: 10px;
+    width: 100px;
+}
+.health{
+    display: flex;
+}
+.happiness{
+    display: flex;
+}
+.food{
+    display: flex;
+}
+#health{
+    width: 100px;
+}
+#happiness{
+    width: 100px;
+}
+#food{
+    width: 100px;
 }
 
-#meters
-{
-	padding: 3px 0 4px 0;
+#mHealth{
+	background-color: #81F781;
+	border: 1px solid #81F781;
+    padding: 3px 0 4px 0;
 	width: 130px;
 }
 
-/*
-The meters each have a border color matching their background color, to be manipulated via script as indicators.
-*/
-
-#mHealth
-{
-	background-color: #81F781; /* green */
-	border: 1px solid #81F781;
-}
-
-#mHappiness
-{
-	background-color: #FAAC58; /* orange */
+#mHappiness{
+	background-color: #FAAC58;
 	border: 1px solid #FAAC58;
+    padding: 3px 0 4px 0;
+	width: 130px;
 }
 
-#mFood
-{
-	background-color: #5882FA; /* blue */
+#mFood{
+	background-color: #5882FA;
 	border: 1px solid #5882FA;
+    padding: 3px 0 4px 0;
+	width: 130px;
 }
-
-#buttons
-{
-	padding: 18px 4px 0 0;
-	height: 40px;
-	width: 50px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+#btnFeed{
+    width: 47px;
 }
-
-.feedBtn
-{
-	background-color: #04B4AE; /* turquoise */
-  color: #F2F2F2; /* near white */
-  padding: 2px;
-  margin: 1px;
-}
-
-.feedBtn:hover
-{
-  background-color: #01DFD7;
-}
-
-.feedBtn:active
-{
-  background-color: #088A85;
-}
-
-#feedback
-{
-	margin-top: 67px;
-	padding: 3px 0 4px 0;
-	width: 380px;
-	float: none;
+#btnPlay{
+    width: 47px;
 }

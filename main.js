@@ -1,26 +1,23 @@
 function switchColor(code) {
-        if (0){
-            document.getElementById("circle").style.backgroundColor = "blue";
-        }
-        if (1){
-            document.getElementById("circle").style.backgroundColor = "yellow";
-        }
-        if (2){
-            document.getElementById("circle").style.backgroundColor = "red";
-        }
-        if (3){
-            document.getElementById("circle").style.backgroundColor = "purple";
-        }
-        if (4){
-            document.getElementById("circle").style.backgroundColor = "orange";
-        }
-        if (5){
-            document.getElementById("circle").style.backgroundColor = "pink";
-        }
-
+    if (0){
+        document.getElementById("circle").style.backgroundColor = "blue";
+    } else if (1){
+        document.getElementById("circle").style.backgroundColor = "yellow";
+    } else if (2){
+        document.getElementById("circle").style.backgroundColor = "red";
+    } else if (3){
+        document.getElementById("circle").style.backgroundColor = "purple";
+    } else if (4){
+        document.getElementById("circle").style.backgroundColor = "orange";
+    } else if (5){
+        document.getElementById("circle").style.backgroundColor = "pink";
+    }
 }
 
-
+(function() {
+        
+     document.addEventListener('DOMContentLoaded',function(){
+         
          var ctMaxH =       30,
              ctMaxVM =      30,
              ctMaxVR =      30,
@@ -32,7 +29,7 @@ function switchColor(code) {
              intervalH =    1000,
              intervalVM =   2000,
              intervalVR =   3000,
-             
+
              threshold =    ctMaxH * 0.6,
              points =       2,
              widther =      4,
@@ -41,7 +38,7 @@ function switchColor(code) {
              dangerH =      false,
              dangerVM =     false,
              dangerVR =     false,
-            
+
              getMtrH =      document.getElementById('mHealth'),
              getMtrVM =     document.getElementById('mHappiness'),
              getMtrVR =     document.getElementById('mFood'),
@@ -51,6 +48,7 @@ function switchColor(code) {
              getStyleVR =   getMtrVR.style,
              bdrStart =		"1px solid ",
              
+                 //Colors for meter borders
              clrDfltH =     "#81F781",  //green
              clrDfltVM =    "#FAAC58",  //orange
              clrDfltVR =    "#5882FA",  //blue
@@ -62,17 +60,8 @@ function switchColor(code) {
              clrWarn =      "#FF0040", //red
          
                  //Get buttons for click events
-             getBtnVM =     document.getElementById('btnVM'),
-             getBtnVR =     document.getElementById('btnVR'),
-             
-                 //Get eyes to express status
-             getEyes =		document.getElementById('petEyes'),
-             eyesOK =		"o....o",
-              eyesSick = 	"@....@",
-             eyesDead =		"x....x",
-         
-                 //Get style for the feedback div
-              getStyleFb = 	document.getElementById('feedback').style;
+             getBtnVM =     document.getElementById('btnFeed'),
+             getBtnVR =     document.getElementById('btnPlay'),
              
         
          getStyleFb.display = 'none';
@@ -258,40 +247,9 @@ function switchColor(code) {
          function loseH(){
               ctCurH = ctCurH - points;        
          }
-         
-         function warnVM(){
-             getEyes.innerHTML = eyesSick;
-             getStyleVM.border = bdrStart + clrWarn;
-         }
-         
-         function warnVR(){
-             getEyes.innerHTML = eyesSick;
-             getStyleVR.border = bdrStart + clrWarn;
-         }
-         
-         function warnH(){
-             getEyes.innerHTML = eyesSick;
-             getStyleH.border = bdrStart + clrWarn;
-         }
-         
-         function okVM(){
-             getStyleVM.border = bdrStart + clrDfltVM;
-         }
-         
-         function okVR(){
-             getStyleVR.border = bdrStart + clrDfltVR;
-         }
-         
-         function okH(){
-             getEyes.innerHTML = eyesOK;
-             getStyleH.border = bdrStart + clrDfltH;
-         }
-         
          function ending(){
-             getEyes.innerHTML = eyesDead;
-             getStyleFb.display = 'block';
-         }
-         
+            getStyleFb.display = 'block';
+        }
         });
         
     })();

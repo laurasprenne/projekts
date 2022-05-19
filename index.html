@@ -17,33 +17,36 @@
             <button onclick="switchColor(5)">pink</button>
         </div>
     </div>
+
     <div class="namechoice">
         <h2>Pick a name</h2>
-        <input type="text">
+        <input id ="input" type="text">
     </div>
+
     <div class="pet">
         <div id="circle"></div>
     </div>
-    <div id="stats">
-		
-		<div id="labels">
-			<div id="labelH">Health</div>
-			<div id="labelVM">Happiness</div>
-			<div id="labelVR">Food</div>
-		</div>
-		
-		<div id="meters">
-			<div id="mHealth"></div>
-			<div id="mHappiness"></div>
-			<div id="mFood"></div>
-		</div>
-		
-		<div id="buttons" class="backMe floatLeft">
-			<div id="btnVM" class="feedBtn alignCtr cornered heightFix">Play</div>
-			<div id="btnVR" class="feedBtn alignCtr cornered heightFix">Feed</div>
-		</div>
 
-	</div>
+    <div id="stats">
+		<div class="health">
+            <div id="health">Health</div>
+            <div id="mHealth"></div>
+        </div>
+        <div class="happiness">
+            <div id="happiness">Happiness</div>
+            <div id="mHappiness"></div>
+        </div>
+		<div class="food">
+			<div id="food">Food</div>
+            <div id="mFood"></div>
+		</div>
+    </div>
+
+    <div class="actions">
+        <button id="btnPlay" onclick="functionPlay()">Play</div>
+        <button id="btnFeed" onclick="functionFeed()">Feed</div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>

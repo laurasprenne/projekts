@@ -6,6 +6,7 @@
 <body>
     <h1>Virtual pet</h1>
 <hr/>
+<div class="first">
     <div class="colorchoice">
         <h2>Pick the color of your pet</h2>
         <div class="colorchoices">
@@ -20,13 +21,16 @@
 
     <div class="namechoice">
         <h2>Pick a name</h2>
-        <input id ="input" type="text">
+        <input id="input" type="text">
+        <button id ="enter" onclick="setValue();">Enter</button>
     </div>
+</div>
 
     <div class="pet">
         <div id="circle"></div>
     </div>
 
+<div class="second">
     <div id="stats">
 		<div class="health">
             <div id="health">Health</div>
@@ -43,10 +47,10 @@
     </div>
 
     <div class="actions">
-        <button id="btnPlay" onclick="functionPlay()">Play</div>
-        <button id="btnFeed" onclick="functionFeed()">Feed</div>
+        <button id="btnPlay" onclick="playTime()">Play</div>
+        <button id="btnFeed" onclick="feed()">Feed</div>
     </div>
-
+</div>
     <script src="main.js"></script>
 </body>
 </html>

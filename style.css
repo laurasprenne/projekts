@@ -46,12 +46,15 @@ body{
 }
 .health{
     display: flex;
+    padding-bottom: 10px;
 }
 .happiness{
     display: flex;
+    padding-bottom: 10px;
 }
 .food{
     display: flex;
+    padding-bottom: 10px;
 }
 #health{
     width: 100px;
@@ -64,22 +67,22 @@ body{
 }
 
 #mHealth{
-	background-color: #81F781;
-	border: 1px solid #81F781;
+	background-color: #87BBA2;
+	border: 1px solid #87BBA2;
     padding: 3px 0 4px 0;
 	width: 130px;
 }
 
 #mHappiness{
-	background-color: #FAAC58;
-	border: 1px solid #FAAC58;
+	background-color: #234327;
+	border: 1px solid #234327;
     padding: 3px 0 4px 0;
 	width: 130px;
 }
 
 #mFood{
-	background-color: #5882FA;
-	border: 1px solid #5882FA;
+	background-color: #065f2f;
+	border: 1px solid #065f2f;
     padding: 3px 0 4px 0;
 	width: 130px;
 }

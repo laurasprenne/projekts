@@ -1,13 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #e8f7df;
+    color: #0b1708;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 h1{
     text-align: center;
+    font-size: 40px;
+    color: #180816;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    color: #0b1708;
+    background-color: #0b1708;
+    text-align: center;
+    margin-left: 0;
 }
 h3{
     color: #555;
 }
-body{
+.first{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+.choices{
+    margin-left: 150px;
+    margin-top: 50px;
+
+}
+#smile{
+    transform: rotate(90deg);
+    font-size: 70px;
+    color: #0b1708;
+}
+.pet{
+   position: relative;
+}
+#smile{
+    color: #0b1708;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 7px;
+}
+.colorchoices button{
+    border: 2px solid #0b1708;
+    background-color: #e8f7df;
+    color: #0b1708; 
+    border-radius: 50%;
+    padding: 2px 25px;
+    height: 100px;
+    width: 100px;
+    font-size: 15px;
+}
+button:hover {
+    background-color: #0b1708;
+    color: #e8f7df;
+    transition: background-color 0.2s ease;
+}
+button:focus {
+    background-color: #0b1708;
+    color: #e8f7df;
+    transition: background-color 0.2s ease;
 }
 .colorchoice{
     display: flex;
@@ -18,25 +86,47 @@ body{
 .namechoice{
     text-align: center;
 }
+#input{
+    background-color: #e8f7df;
+}
+button{
+    background-color: #0b1708;
+    color: #e8f7df;
+}
+#ready{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    align-self: center;
+    margin-top: 70px;
+}
+#ready:hover{
+    background-color: #0b1708b2;
+}
+#enter:hover{
+    background-color: #0b1708b2;
+    color: #e8f7df;
+    transition: background-color 0.2s ease;
+}
 .colorchoices{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around center;
-    row-gap: 10px;
-    column-gap: 10px;
+    align-self: center;
+    row-gap: 25px;
+    column-gap: 25px;
     text-align: center;
 }
 #circle{
-    height: 200px;
-    width: 200px;
-    background-color: #555;
+    height: 250px;
+    width: 250px;
+    background-color: #0b170867;
     border-radius: 50%;
+    border: 2px solid #0b1708;
 }
 .pet{
     display: flex;
     justify-content: center;
-    padding-top: 30px;
-    column-gap: 20px;
 }
 
 .labels{
@@ -46,15 +136,15 @@ body{
 }
 .health{
     display: flex;
-    padding-bottom: 10px;
+    padding-bottom:15px;
 }
 .happiness{
     display: flex;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 .food{
     display: flex;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 #health{
     width: 100px;
@@ -67,28 +157,70 @@ body{
 }
 
 #mHealth{
-	background-color: #87BBA2;
-	border: 1px solid #87BBA2;
-    padding: 3px 0 4px 0;
-	width: 130px;
+	background-color: #315041;
+    height: 100%;
+    width: 100%;
+    transition: width 2s;
 }
-
+#hBack{
+    width: 350px;
+    height: 30px;
+    background-color: #879b7b;
+}
 #mHappiness{
 	background-color: #234327;
-	border: 1px solid #234327;
-    padding: 3px 0 4px 0;
-	width: 130px;
+	width: 100%;
+    height: 100%;
+    transition: width 2s;
 }
-
 #mFood{
 	background-color: #065f2f;
-	border: 1px solid #065f2f;
-    padding: 3px 0 4px 0;
-	width: 130px;
+    height: 100%;
+	width: 100%;
+    transition: width 2s;
 }
 #btnFeed{
     width: 47px;
 }
 #btnPlay{
     width: 47px;
+}
+.first{
+    left: 0px;
+}
+.second{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top:300px;
+    right: 350px;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 30px;
+}
+#btnPlay{
+    width: 120px;
+    height: 35px;
+}
+#btnPlay:hover{
+    background-color: #0b1708b2;
+    transition: background-color 0.2s ease;
+}
+#btnFeed{
+    width: 120px;
+    height: 35px;
+}
+#btnFeed:hover{
+    background-color: #0b1708b2;
+    transition: background-color 0.2s ease;
+}
+.stats{
+    padding-bottom: 30px;
+}
+#name{
+    font: bolder;
+    font-size: 25px;
+    padding-bottom: 20px;
 }
